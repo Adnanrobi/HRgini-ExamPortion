@@ -1,0 +1,38 @@
+.ImageQst{
+    background-color: #E8FCEB;
+    border-radius: 1rem;
+    width: 65vw;
+    padding:1rem;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.Qst__row{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+}
+
+.Qst__row__left{
+    flex: 0.6;
+}
+
+.Image__grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 1rem;
+    margin-top: 1rem;
+}
+
+.ImageQst__image{
+    height: 10rem;
+    width: 10rem;
+    background-color:black;
+    transition: transform .2s;
+}
+
+.ImageQst__image:hover{
+    transform:scale(2.5);
+}

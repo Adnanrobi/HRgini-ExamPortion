@@ -7,10 +7,11 @@ function Sidebar() {
     <div className="Sidebar">
         <ul className="SidebarList">
         {SidebarData.map((val, key) => {
-                return <li className="Row" key={key} 
+                return <li className="row" key={key} id={window.location.pathname == val.link ? "active" : ""}
                     onClick={() => {window.location.pathname = val.link}}>
-                    <div>{val.icon}</div>
-                    <div>{val.title}</div>
+                    <div id={val.header == "" ? "title" : "sideheader"}>{val.header}</div>
+                    <div id="icon">{val.icon}</div>
+                    <div id="title">{val.title}</div>
                     </li>
             })}
         </ul>
