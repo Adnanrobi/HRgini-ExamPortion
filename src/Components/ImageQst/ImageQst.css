@@ -7,6 +7,37 @@
     margin-bottom: 1rem;
 }
 
+.ImageQst__LeftBottom{
+    display:flex;
+    align-items:center;
+}
+
+.Checkbox{
+    height:1rem;
+    width:1rem;
+    background-color:#D9D9D9;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.ImageQst__marked{
+    background-color: #E8FCEB;
+    border-radius: 1rem;
+    width: 65vw;
+    padding:1rem;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.ImageQst__unmarked{
+    background-color: white;
+    border-radius: 1rem;
+    width: 65vw;
+    padding:1rem;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
 .Qst__row{
     display: flex;
     justify-content:space-between;
@@ -34,5 +65,5 @@
 }
 
 .ImageQst__image:hover{
-    transform:scale(2.5);
+    transform:scale(3);
 }

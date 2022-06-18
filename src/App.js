@@ -12,7 +12,7 @@ function App() {
       <Navbar />
       <div className="App__body">
         {/* <Sidebar /> */}
-        <div className="App__left">
+        <div className="App__left" >
           <VideoFeed />
           <AnsweredQst />
         </div>

@@ -1,3 +1,8 @@
+.AnsweredQst__{
+    position: sticky;
+    top:13rem;
+}
+
 .AQ__top{
     display:flex;
     background-color:#FBF4D0;
@@ -32,4 +37,15 @@
     align-items: center;
     justify-content: center;
     
+}
+
+.AQ_number__unmarked{
+    height:1.75rem;
+    width: 2.5rem;
+    border:2px solid #003B73;
+    background-color: rgb(58, 117, 58);
+    border-radius:0.5rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
