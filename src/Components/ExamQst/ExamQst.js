@@ -6,20 +6,14 @@ import './ExamQst.css';
 function ExamQst(props) {
   const [qstList, setQstList] = useContext(QstContext);
   const [ExamQstState, setExamQstState] = useState('ExamQst__unmarked');
-  const [ExamOptions,setExamOptions] = useState({a: false, b: false, c: false, d: false});
 
   const checkBox__clicked = (option) => {
     let duplicate__ExamOptions = { ...props, [option]: !props[option] }
-    // setExamOptions({ ...ExamOptions, [option]: !ExamOptions[option] })
     if (!duplicate__ExamOptions.a && !duplicate__ExamOptions.b && !duplicate__ExamOptions.c && !duplicate__ExamOptions.d)
     {
-      duplicate__ExamOptions = { ...props, qstMark: false }
       duplicate__ExamOptions = { ...props, qstMark: false, [option]: !props[option]}
-      console.log(duplicate__ExamOptions)
       const newQstList = qstList.map(obj => {
         if (obj.qstNumber === props.qstNumber) {
-          console.log('changing1', props.qstNumber)
-          console.log(obj.qstNumber)
           return {
             ...obj,
           a: duplicate__ExamOptions.a, b: duplicate__ExamOptions.b, c: duplicate__ExamOptions.c, d: duplicate__ExamOptions.d,
@@ -27,19 +21,14 @@ function ExamQst(props) {
         }
         return obj;
       });
-      console.log(newQstList);
       setQstList(newQstList);
       setExamQstState('ExamQst__unmarked');
       }
     else
     {
-      duplicate__ExamOptions = { ...props, qstMark: true }
       duplicate__ExamOptions = { ...props, qstMark: true, [option]: !props[option]}
-      console.log(duplicate__ExamOptions)
       const newQstList = qstList.map(obj => {
         if (obj.qstNumber === props.qstNumber) {
-          console.log('changing2', props.qstNumber)
-          console.log(obj.qstNumber)
           return {
             ...obj,
           a: duplicate__ExamOptions.a, b: duplicate__ExamOptions.b, c: duplicate__ExamOptions.c, d: duplicate__ExamOptions.d,
@@ -47,7 +36,6 @@ function ExamQst(props) {
         }
         return obj;
       });
-      console.log(newQstList);
       setQstList(newQstList);
       setExamQstState('ExamQst__marked');
       }
