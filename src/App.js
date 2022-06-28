@@ -9,7 +9,7 @@ import VideoFeed from './Components/VideoFeed/VideoFeed';
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="App__body">
         {/* <Sidebar /> */}
         <div className="App__left" >
