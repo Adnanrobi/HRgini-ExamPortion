@@ -2,7 +2,7 @@ import './App.css';
 import AnsweredQst from './Components/AnsweredQst/AnsweredQst';
 import ExamInfo from './Components/ExamInfo/ExamInfo';
 import Navbar from './Components/Navbar';
-/* import Sidebar from "./Components/Sidebar"; */
+import Sidebar from "./Components/Sidebar";
 import QstList from './Components/QstList/QstList';
 import VideoFeed from './Components/VideoFeed/VideoFeed';
 

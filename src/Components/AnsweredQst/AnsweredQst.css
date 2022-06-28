@@ -6,7 +6,7 @@
 .AQ__top{
     display:flex;
     background-color:#FBF4D0;
-    justify-content:space-around;
+    justify-content:space-evenly;
     height:3rem;
     width:16rem;
     border-radius: 0.5rem;
